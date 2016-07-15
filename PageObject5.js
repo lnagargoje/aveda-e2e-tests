@@ -11,62 +11,17 @@ module.exports = function() {
         browser.wait(protractor.ExpectedConditions.elementToBeClickable(nameOfElementToWaitFor), timeToWait, 'Element not clickable');
     };
 
-//1BasicOrderasCSR
-    this.order = element(by.buttonText('Build Order'));
-    this.selectorder = element.all(by.repeater('orderType in salonsDetail.orderTypes')).get(0);
+//5CreateBuyerUser
+    //this.order = element(by.buttonText('Build Order'));
+    //this.selectorder = element.all(by.repeater('orderType in salonsDetail.orderTypes')).get(8);
     //.all - finding the specific one in a list of things
     //repeater is looking at everything
     //get(0) is telling to look at the first one, can be replaced with first()
-    this.ProductSearch = element(by.id('ProductSearch'));
-    this.checkout = element(by.partialButtonText('Proceed'));
+    //this.ProductSearch = element(by.id('ProductSearch'));
+    //this.checkout = element(by.partialButtonText('Proceed'));
     // . in .am as it is class
     //ng-click is an attribute
     //css -
-    this.validate = element(by.buttonText("Validate Order"));
-    this.next = element(by.css("[ng-click*='orderCheckout.continueToPayment()']"));
-};
-
-//2BasicOrderasSDP
-    this.order = element(by.buttonText('Build Order'));
-    this.selectorder = element.all(by.repeater('orderType in salonsDetail.orderTypes')).get(0);
-    //.all - finding the specific one in a list of things
-    //repeater is looking at everything
-    //get(0) is telling to look at the first one, can be replaced with first()
-    this.ProductSearch = element(by.id('ProductSearch'));
-    this.checkout = element(by.partialButtonText('Proceed'));
-    // . in .am as it is class
-    //ng-click is an attribute
-    //css -
-    this.validate = element(by.buttonText("Validate Order"));
-    this.next = element(by.css("[ng-click*='orderCheckout.continueToPayment()']"));
-}
-
-//3LaunchOrderasSDP
-    this.order = element(by.buttonText('Build Order'));
-    this.selectorder = element.all(by.repeater('orderType in salonsDetail.orderTypes')).get(6);
-    //.all - finding the specific one in a list of things
-    //repeater is looking at everything
-    //get(0) is telling to look at the first one, can be replaced with first()
-    this.ProductSearch = element(by.id('ProductSearch'));
-    this.checkout = element(by.partialButtonText('Proceed'));
-    // . in .am as it is class
-    //ng-click is an attribute
-    //css -
-    this.validate = element(by.buttonText("Validate Order"));
-    this.next = element(by.css("[ng-click*='orderCheckout.continueToPayment()']"));
-}
-
-//4CostCenterOrderasSDP
-    this.order = element(by.buttonText('Build Order'));
-    this.selectorder = element.all(by.repeater('orderType in salonsDetail.orderTypes')).get(8);
-    //.all - finding the specific one in a list of things
-    //repeater is looking at everything
-    //get(0) is telling to look at the first one, can be replaced with first()
-    this.ProductSearch = element(by.id('ProductSearch'));
-    this.checkout = element(by.partialButtonText('Proceed'));
-    // . in .am as it is class
-    //ng-click is an attribute
-    //css -
-    this.validate = element(by.buttonText("Validate Order"));
-    this.next = element(by.css("[ng-click*='orderCheckout.continueToPayment()']"));
+    //this.validate = element(by.buttonText("Validate Order"));
+    //this.next = element(by.css("[ng-click*='orderCheckout.continueToPayment()']"));
 }
